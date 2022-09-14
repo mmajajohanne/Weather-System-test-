@@ -1,0 +1,49 @@
+﻿@page
+@model WeatherModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Weather</h1>
+</div>
+
+<div class="text-lg-right">
+    <h3>@DateTime.Now.ToString("yyyy-MM-dd HH:mm")</h3>
+</div>
+
+<div class="container-fluid lead">
+
+    Below you find an overview of the weather at USN Porsgrunn:
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Measurement Alias</th>
+                <th>Measurement Name</th>
+                <th>Current Value</th>
+                <th>Unit</th>
+                <th>TimeStamp</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var measurementData in Model.measurementDataList)
+            {
+            <tr>
+
+                <td> @measurementData.MeasurementAlias </td>
+                <td> @measurementData.MeasurementName </td>
+                <td> @measurementData.MeasurementValue </td>
+                <td> @measurementData.Unit </td>
+                <td> @measurementData.MeasurmentTimeStamp </td>
+
+                <td> <a href="/Chart?measurementname=@measurementData.MeasurementName"><i class="fas fa-chart-line"></i></a>
+
+
+</tr>
+            }
+        </tbody>
+    </table>
+
+</div>

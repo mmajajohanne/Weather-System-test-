@@ -1,0 +1,86 @@
+﻿@page
+@model WeatherSystem.Pages.AboutModel
+@{
+    ViewData["Title"] = "Wather System";
+}
+
+
+    <div class="text-center">
+        <h1 class="display-4"> Information about the Weather System</h1>
+    </div>
+
+    <div class="container-fluid lead">
+
+        <p>This Weather Station is located at <a href="https://www.usn.no/english/" target="_blank">University of South-Eastern Norway</a>, campus Porsgrunn.</p>
+        <p>The Weather System is based on a <a href="https://columbiaweather.com/products/weather-stations/legacy/capricorn-2000ex-weather-station/" target="_blank">Capricorn 2000ex Weather Station</a> with <a href="https://columbiaweather.com/products/weather-monitoring/microserver/" target="_blank">Weather MicroServer</a> from <a href="https://columbiaweather.com" target="_blank">Columbia Weather Systems</a>.</p>
+        <p>&nbsp;</p>
+        <p>Below we see an overview of the Weather System at <a href="https://www.usn.no/english/" target="_blank">University of South-Eastern Norway</a>, campus Porsgrunn. The Weather System is Developed by <a href="https://www.usn.no/english/about/contact-us/employees/hans-petter-halvorsen" target="_blank">Hans-Petter Halvorsen</a> - <a href="https://www.halvorsen.blog" target="_blank">https://www.halvorsen.blog</a></p>
+
+        <p><img src="~/images/weather_system.png" class="img-responsive center-block" alt="" /></p>
+
+
+        <p>&nbsp;</p>
+        <p>The Data from the Weather Station are then saved in different places: </p>
+        <ul>
+            <li>SQL Server – Database System from Microsoft</li>
+            <li> 	Microsoft Azure - Cloud Platform from Microsoft </li>
+            <li>ThingSpeak (https://thingspeak.com) – Commercial IoT Platform from MathWorks, the vendor of MATLAB. ThingSpeak is available as a free service for non-commercial small projects  </li>
+            <li>OPC UA Server</li>
+            <li>Excel Files </li>
+            <li>DMS Platform – The Data Management System developed by Hans-Petter Halvorsen</li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>The Data are logged every 10 minutes, meaning we get 144 meeasurments every day (between 00:00 and 24:00).</p>
+        <p>&nbsp;</p>
+        <p>This Web Application is programmed by using ASP.NET Core, HTML5, Bootstrap, JavaScript and data are stored in a MariaDB Database.</p>
+        <p>&nbsp;</p>
+        <p>The Data Logging Application is written in <a href="../../programming/labview/labview.php" target="_blank">LabVIEW</a>. See Figure below. The Data are retrieved from the Weather Station  using Modbus TCP and XML Web Service. The data are then stored in the cloud in different ways (SQL Server, MariaDB/MySQL, OPC UA, etc.) and at different locations, such as Microsoft Azure, ThingSpeak, etc.</p>
+
+
+
+        <p><img src="~/images/weather_logging_application.png" class="img-responsive center-block" alt="" /></p>
+        <p>&nbsp;</p>
+        <h2>ThingSpeak</h2>
+        <p>The data from the Weather Station are also stored on ThingSpeak. ThingSpeak is an IoT Service that lets you collect and store sensor data in the cloud and develop Internet of Things applications.</p>
+        <p>
+            <br>
+            <i class="fas fa-link" style="font-size:32px;"></i><a href="https://thingspeak.com/channels/885720" target="_blank"> Weather Station at ThingSpeak</a>
+        </p>
+        <p>&nbsp;</p>
+
+
+
+
+        <h1>Data Management System (DMS)</h1>
+        <p>The Weather System is part of a larger platform for Data Logging, Data Management and Data Monitoring; Data Management System (DMS).</p>
+
+
+        <p>Below you see an overview of the Data Management System.</p>
+        <p>&nbsp;</p>
+
+
+
+        <p><img src="~/images/dms_platform.png" class="img-responsive center-block" alt="" /></p>
+
+
+
+
+        <p>&nbsp;</p>
+        <p>The DMS platform offers infrastructure, database, applications for management and monitoring, datalogging features and different APIs for saving and retrieving data.</p>
+        <p>&nbsp;</p>
+        <p>Data Management and Monitoring Web Application:</p>
+        <p><img src="~/images/dms.png" class="img-responsive center-block" alt="" /></p>
+        <p>&nbsp;</p>
+        <p>Tag Management:</p>
+        <p><img src="~/images/dms_tags.png" class="img-responsive center-block" alt="" /></p>
+        <p>&nbsp;</p>
+        <p></p>
+        <p>For more information, see the following:</p>
+        <p><i class="fas fa-link" style="font-size:32px;"></i><a href="https://www.halvorsen.blog" target="_blank"> https://www.halvorsen.blog</a></p>
+        <p><i class="fas fa-link" style="font-size:32px;"></i><a href="../../projects/projects/dmm.php" target="_blank"> Data Management System Project</a></p>
+        <p><i class="fas fa-link" style="font-size:32px;"></i><a href="../software.php" target="_blank"> Software</a></p>
+        <p>&nbsp;</p>
+        <p><i class="far fa-copyright" style="font-size:32px;"></i> The Data Management System (DMS) is Developed by <a href="https://www.usn.no/english/about/contact-us/employees/hans-petter-halvorsen" target="_blank">Hans-Petter Halvorsen</a> - <a href="https://www.halvorsen.blog" target="_blank">https://www.halvorsen.blog</a>.</p>
+    
+    
+    </div>

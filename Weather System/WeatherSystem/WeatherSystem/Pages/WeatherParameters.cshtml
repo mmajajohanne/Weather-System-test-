@@ -1,0 +1,37 @@
+﻿@page
+@model WeatherSystem.Pages.WeatherParametersModel
+@{
+     ViewData["Title"] = "Weather Parameters";
+}
+
+<div class="text-center">
+        <h1 class="display-4">Weather Parameters</h1>
+</div>
+
+<div class="container-fluid lead">
+
+
+        Below you see allavailible Weather Parameters connected to the Weather Station:<br />
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ParameterId</th>
+                    <th>ParameterName</th>
+                    <th>Unit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var weatherparameter in Model.weatherParameterList)
+                {
+                    <tr>
+                        <td> @weatherparameter.MeasurementId </td>
+                        <td> @weatherparameter.MeasurementName </td>
+                        <td> @weatherparameter.Unit </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+</div>

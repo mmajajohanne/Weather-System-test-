@@ -1,0 +1,321 @@
+﻿@page
+@model WeatherSystem.Pages.WeatherInformationModel
+@{
+    ViewData["Title"] = "Weather Information";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Information about the Weather</h1>
+</div>
+
+
+<div class="container-fluid lead">
+
+    <p>Below you find some basic information about the different Weather Parameters that are measured and logged by this Wetaher System.</p>
+    <p>You also find lots of Weather Information at <a href="https://www.yr.no/place/Norway/Telemark/Porsgrunn/Porsgrunn/" target="_blank">yr.no</a>.</p>
+    <p>&nbsp;</p>
+    <h2>Temperature</h2>
+    <p>A <a href="https://en.wikipedia.org/wiki/Temperature" target="_blank">temperature</a> expresses hot and cold, as measured with a thermometer. </p>
+    <p>There are various temperature scales. The most commonly used scales are the <a href="https://en.wikipedia.org/wiki/Celsius" target="_blank">Celsius</a> scale  (denoted °C), <a href="https://en.wikipedia.org/wiki/Fahrenheit" target="_blank">Fahrenheit</a> scale (denoted °F), and <a href="https://en.wikipedia.org/wiki/Kelvin" target="_blank">Kelvin</a> scale (denoted K).</p>
+    <p>&nbsp;</p>
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>Icon</td>
+                <td>Temperature °C</td>
+                <td>Description</td>
+                <td>Season</td>
+
+            </tr>
+            <tr>
+                <td><i class='fas fa-temperature-high' style='font-size:32px;color:darkred;'></i></td>
+                <td>&gt; 30 °C</td>
+                <td>Very Hot</td>
+                <td>Summer</td>
+
+            </tr>
+            <tr>
+                <td><i class='fas fa-temperature-high' style='font-size:32px;color:red;'></i></td>
+                <td>20 to 30 °C</td>
+                <td>Hot</td>
+                <td>Summer</td>
+
+            </tr>
+            <tr>
+                <td><i class='fas fa-temperature-high' style='font-size:32px;color:darkorange;'></i></td>
+                <td>10 to 20 °C</td>
+                <td>Warm</td>
+                <td>Spring/Summer</td>
+
+            </tr>
+            <tr>
+                <td><i class='fas fa-temperature-high' style='font-size:32px;color:orange;'></i></td>
+                <td>0 to 10 °C</td>
+                <td>A bit Cold</td>
+                <td>Autumn</td>
+
+            </tr>
+            <tr>
+                <td><i class='fas fa-temperature-low' style='font-size:32px;color:blue;'></i></td>
+                <td>-10 to 0 °C</td>
+                <td>Cold</td>
+                <td>Winter</td>
+
+            </tr>
+            <tr>
+                <td><i class='fas fa-temperature-low' style='font-size:32px;color:darkblue;'></i></td>
+                <td>-20 to -30 °C</td>
+                <td>Very Cold</td>
+                <td>Winter</td>
+
+            </tr>
+            <tr>
+                <td><i class='fas fa-temperature-low' style='font-size:32px;color:purple;'></i></td>
+                <td>&lt; -30 °C</td>
+                <td>Extremly Cold</td>
+                <td>Winter</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <h2>Rain</h2>
+    <p><a href="https://en.wikipedia.org/wiki/Rain" target="_blank">Rain</a> is liquid water in the form of droplets that have condensed from atmospheric water vapor and then become heavy enough to fall under gravity. </p>
+    <p>&nbsp;</p>
+    <h2>Wind Direction</h2>
+    <p>The <a href="https://en.wikipedia.org/wiki/Wind_direction" target="_blank">Wind Direction</a> is reported by the direction from which it originates. For example, a northerly wind blows from the north to the south.  The wind directions are measured in units from 0° to 360°. Wind direction is measured in degrees clockwise from due north. A wind blowing from the north has a wind direction of 0° (360°), a wind blowing from the east has a wind direction of 90°, a wind blowing from the south has a wind direction of 180°, and a wind blowing from the west has a wind direction of 270°. See details below.</p>
+    <p>&nbsp;</p>
+
+
+
+    <p><img src="~/images/Wind Directions.png" class="img-responsive center-block" alt="" /></p>
+    
+
+    <p>See detailed table below.</p>
+    <p>&nbsp;</p>
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>Wind Direction</td>
+                <td>Icon</td>
+                <td>Degrees [°]</td>
+                <td>Direction</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td><img src='~/images/wind/winddirection0.png' width='32' height='32'></td>
+                <td>0°</td>
+                <td>Wind from North</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><img src='~/images//wind/winddirection45.png' width='32' height='32'></td>
+                <td>45°</td>
+                <td>Wind from North-East</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img src='~/images/wind/winddirection90.png' width='32' height='32'></td>
+                <td>90°</td>
+                <td>Wind from East</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><img src='~/images/wind/winddirection135.png' width='32' height='32'></td>
+                <td>135°</td>
+                <td>Wind from South-East</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><img src='~/images/wind/winddirection180.png' width='32' height='32'></td>
+                <td>180°</td>
+                <td>Wind from South</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><img src='~/images/wind/winddirection225.png' width='32' height='32'></td>
+                <td>225°</td>
+                <td>Wind from South-West</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><img src='~/images/wind/winddirection270.png' width='32' height='32'></td>
+                <td>270°</td>
+                <td>Wind from West</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><img src='~/images/wind/winddirection315.png' width='32' height='32'></td>
+                <td>315°</td>
+                <td>Wind from North-West</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <h2>Wind Speed</h2>
+    <p>The <a href="https://en.wikipedia.org/wiki/Beaufort_scale" target="_blank">Beaufort wind scale</a> is an empirical measure that relates wind speed to observed conditions at sea or on land. Se details below.</p>
+    <p>&nbsp;</p>
+
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>Wind Scale</td>
+                <td>Icon</td>
+                <td>Description</td>
+                <td>Norwegian</td>
+                <td>Wind Speed m/s</td>
+                <td>Effect</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td><i class='fas fa-sign' style='font-size:32px;color:lavender;'></i></td>
+                <td>Calm</td>
+                <td>Stille</td>
+                <td>&lt;0.3 m/s</td>
+                <td>Nothing</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><i class='fas fa-sign' style='font-size:32px;color:lightcyan;'></i></td>
+                <td>Light Air</td>
+                <td>Flau vind</td>
+                <td>0.3 - 1.5 m/s</td>
+                <td>Diversion of smoke</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><i class='fas fa-sign' style='font-size:32px;color:lightcyan;'></i></td>
+                <td>Light Breeze</td>
+                <td>Svak vind</td>
+                <td> 1.6 - 3.3 m/s</td>
+                <td>Contractions of leaves</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><i class='fas fa-sign' style='font-size:32px;color:lightblue;'></i></td>
+                <td>Gentle Breeze</td>
+                <td>Lett bris</td>
+                <td>3.4 - 5.4 m/s</td>
+                <td>Movement of branches</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><i class='fas fa-sign' style='font-size:32px;color:greenyellow;'></i></td>
+                <td>Moderate Breeze</td>
+                <td>laber bris</td>
+                <td>5.5 -7.9 m/s</td>
+                <td>Movement of limbs</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><i class='fas fa-sign' style='font-size:32px;color:green;'></i></td>
+                <td>Fresh Breeze</td>
+                <td>Frisk bris</td>
+                <td>8.0 - 10.7 m/s</td>
+                <td>Movement of small trees</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><i class='fas fa-sign' style='font-size:32px;color:green;'></i></td>
+                <td>Strong Breeze</td>
+                <td>Liten kuling</td>
+                <td>10.8 - 13.8 m/s</td>
+                <td>Movement strong branches</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><i class='fas fa-sign' style='font-size:32px;color:green;'></i></td>
+                <td>High Wind</td>
+                <td>Stiv kuling</td>
+                <td>13.9 - 17.1 m/s</td>
+                <td>Movement of trees</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><i class='fas fa-sign' style='font-size:32px;color:orange;'></i></td>
+                <td>Gale</td>
+                <td>Sterk kuling</td>
+                <td>17.2 - 20.7 m/s</td>
+                <td>Difficulty in walking</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><i class='fas fa-sign' style='font-size:32px;color:orange;'></i></td>
+                <td>String Gale</td>
+                <td>Liten storm</td>
+                <td>20.8 - 24.4 m/s</td>
+                <td>House damage</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><i class='fas fa-sign' style='font-size:32px;color:darkorange;'></i></td>
+                <td>Storm</td>
+                <td>Full storm</td>
+                <td>24. 5 - 28.4 m/s</td>
+                <td>Uprooting of trees</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td><i class='fas fa-sign' style='font-size:32px;color:red;'></i></td>
+                <td>Violent Storm</td>
+                <td>Sterk storm</td>
+                <td>28.5 - 32.6 m/s</td>
+                <td>Storm damage</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td><i class='fas fa-sign' style='font-size:32px;color:#DC080B;'></i></td>
+                <td>Hurricane</td>
+                <td>Orkan</td>
+                <td>&gt; 32.7 m/s</td>
+                <td>Devastation</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Reference: <a href="https://en.wind-turbine-models.com/winds" target="_blank">https://en.wind-turbine-models.com/winds</a> and <a href="https://en.wikipedia.org/wiki/Beaufort_scale" target="_blank">https://en.wikipedia.org/wiki/Beaufort_scale</a></p>
+    <p>The Beaufort wind scale is the most popular scale to name and rate winds by the wind speed. The scale is named after Sir Francis Beaufort. If a wind strength is given without an addendum, the Beaufort scale is used. In the weather forecast and journals this scale is used.</p>
+    <p>&nbsp;</p>
+    <h2>Humidity</h2>
+    <p><a href="https://en.wikipedia.org/wiki/Humidity" target="_blank">Humidity</a> is the concentration of water vapour present in air. Humidity can be measured in several ways, but relative humidity (RH) is the most common.</p>
+    <p>Humidity can indicate how likely is it that there will be dew, fog or precipitation/rain. </p>
+    <p>When Relative humidity is close to 100%, it indicates  that there’s a strong possibility of rain.</p>
+    <p><b>Absolute humidity</b> is the mass of water vapor divided by the mass of dry air in a volume of air at a given temperature. The hotter the air is, the more water it can contain. Absolute humidity is expressed as grams of moisture per cubic meter of air (g/m3).</p>
+    <p><b>Relative humidity</b> is the ratio of the current absolute humidity to the highest possible absolute humidity (which depends on the current air temperature). </p>
+    <p>A reading of 100 percent relative humidity means that the air is totally saturated with water vapor and cannot hold any more, creating the possibility of rain. This doesn't mean that the relative humidity must be 100 percent in order for it to rain — it must be 100 percent where the clouds are forming, but the relative humidity near the ground could be much less. </p>
+    <p>Humans are very sensitive to humidity, as the skin relies on the air to get rid of moisture. The process of sweating is your body's attempt to keep cool and maintain its current temperature. If the air is at 100 percent relative humidity, sweat will not evaporate into the air. As a result, we feel much hotter than the actual temperature when the relative humidity is high.</p>
+    <p>If the relative humidity is low, we can feel much cooler than the actual temperature because our sweat evaporates easily, cooling us off.</p>
+    <p>References:</p>
+    <p><a href="https://science.howstuffworks.com/nature/climate-weather/atmospheric/question651.htm" target="_blank">What Is Relative Humidity and How Does it Affect How I Feel Outside?</a></p>
+    <p>&nbsp;</p>
+    <h2>Barometric Pressure</h2>
+    <p><a href="https://en.wikipedia.org/wiki/Atmospheric_pressure" target="_blank">Atmospheric pressure</a>, sometimes also called barometric pressure (after the sensor), is the pressure within the atmosphere of Earth. </p>
+    <p>The standard atmosphere (symbol: atm) is a unit of pressure defined as 101,325 Pa (1,013.25 hPa; 1,013.25 mbar), equivalent to 760 mm Hg. The atm unit is roughly equivalent to the mean sea-level atmospheric pressure on Earth, that is, the Earth's atmospheric pressure at sea level is approximately 1 atm.</p>
+    <p>The mean sea-level pressure (MSLP) is the average atmospheric pressure at mean sea level. This is the atmospheric pressure normally given in weather reports on radio, television, and newspapers or on the Internet. When barometers in the home are set to match the local weather reports, they measure pressure adjusted to sea level, not the actual local atmospheric pressure.</p>
+    <p>Average sea-level pressure is 1013.25 hPa.</p>
+    <p>How Does Air Pressure Affect Weather?</p>
+    <ul>
+        <li>High air pressure produces clear sky, dry and stable weather.</li>
+        <li>Low air pressure produces unstable weather conditions like rain or storms.</li>
+    </ul>
+    <p>&nbsp;</p>
+    <h2>Solar Radiation</h2>
+    <p><a href="https://en.wikipedia.org/wiki/Solar_irradiance" target="_blank">Solar irradiance</a> (SI) is the power per unit area (watt per square metre, W/m2), received from the Sun in the form of electromagnetic radiation as reported in the wavelength range of the measuring instrument. Solar irradiance is often integrated over a given time period in order to report the radiant energy emitted into the surrounding environment (joule per square metre, J/m2), during that time period. This integrated solar irradiance is called solar irradiation, solar exposure, solar insolation, or insolation.</p>
+    <p>&nbsp;</p>
+
+
+
+    <p>&nbsp;</p>
+
+    <div class="text-center">
+        <a href="#" target="_top" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+    </div>
+
+    <p>&nbsp;</p>
+
+
+</div>

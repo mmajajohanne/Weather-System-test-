@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvNt+ifd2k0a1q4Z1xTKADgAAAAACAAAAAAAQZgAAAAEAACAAAAASFL1MRyl6k12Am4+SOF+QHAYk/D7w2gc1XdOztEhrrAAAAAAOgAAAAAIAACAAAAB6xVLmUATSPRLjwBQAX5AJbBB8UUJlTuZT+AG29fy7s4AAAADm8Hi5U3Ark7C7m3rwrWcct8kAPjhdFUakut8B8MeDqUgtnu7MEgMDpQXzzhtI0hv1x7S1ExxbzBEF6ZrNc1Q0pcu43chCPm9YdUbTSixorsLywHLZlDvEb6KDHMPBLxslvIyYMwf6GDWzug3ELpaLDiBGZ0PywxAyV4pJ7LdJNUAAAAAM1/pAVibFmqGAnUyvl+uUvAZa7NB299cjDyxcdqnK5jRpGf9oeM5wJwwNF3+MaIC7vhUY8hZOtDbfXyETOlFr</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ConnectionString">
+      <Value>DATA SOURCE=dmsserver.database.windows.net%3bUID=WeatherLogin%3bPWD=WeatherSystemUSN2019%3bDATABASE=WEATHER</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
